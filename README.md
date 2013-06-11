@@ -11,4 +11,5 @@ INSTALLATION
 -Clone the repository
 -Copy the csv file in the folder
 -Change the csv name in importer.py (csv_name variable)
+-Change the siteId and apiKey 
 -Execute 'python importer.py' from the command line

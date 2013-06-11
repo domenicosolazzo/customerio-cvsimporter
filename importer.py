@@ -3,8 +3,8 @@ import sys
 import customerio 
 
 csv_name = "example.csv"
-site_id = "67791824ca146a14ee53"
-api_key = "23044f477b3963e28b83"
+site_id = "<add your site id here>"
+api_key = "<add your api key here>"
 
 try:
 	cio = customerio.CustomerIO(site_id, api_key)
