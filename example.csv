@@ -1,0 +1,9 @@
+id,created_at,email,unsubscribed,first_name,last_name,any_field_you_want
+123,1361329477,email@domain.com,TRUE,Domenico,A,Any value
+124,1361329478,email2@domain.com,FALSE,Rolf,b,Any value
+125,1361329478,email3@domain6.com,TRUE,Florian,c,Any value
+126,1361329478,email4@domain5.com,FALSE,Jan Vidar,d,Any value
+127,1361329422,email5@domain4.com,FALSE,Markus,e,Any value
+128,1361329422,email6@domain3.com,FALSE,Andreas,f,Any value
+129,1361329474,email7@domain2.com,FALSE,Monica,g,Any value
+130,1361329471,email8@domain1.com,FALSE,Olav,h,Any value
