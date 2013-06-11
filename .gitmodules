@@ -1,0 +1,3 @@
+[submodule "customerio-python"]
+	path = customerio-python
+	url = https://github.com/customerio/customerio-python.git
