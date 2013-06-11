@@ -1,9 +1,16 @@
 import csv
 import sys
+from customerio import CustomerIO
+
+
 
 
 csv_name = "example.csv"
+site_id = ""
+api_key = ""
+
 try:
+	cio = CustomerIO(site_id, api_key)
 	csv_reader = csv.reader( open( csv_name, 'rb' ), delimiter=',', quotechar='"' )
 	csv_list = list( csv_reader )
 	if ( len( csv_list ) <= 0 ):
@@ -20,6 +27,7 @@ try:
 			data[keys[x]] = i[x]
 		results.append(data)
 	print results
+	cio.identify(id=5, email='customer@example.com', name='Bob', plan='premium')
 except IOError, e:
 	print("The input file ({0}) was missing. Error({1}): {2}".format(csv_name,e.errno, e.strerror))
 	raise e
