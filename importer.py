@@ -15,13 +15,19 @@ try:
 
 	keys = csv_list.pop(0)
 
+	check_keys = [key for key in keys if key.lower() == 'id']
+
+	if len( check_keys ) <= 0:
+		print "The ID key is needed!"
+		raise Exception( "The ID key is needed!")
+
 	#print keys
 	objs = [ i for i in csv_list]
 	results = []
 	for i in csv_list:
 		data = {}
 		for x in range(len(keys)):
-			data[keys[x]] = i[x]
+			data[keys[x].lower()] = i[x]
 		results.append(data)
 	#print results
 	for customer in results:
